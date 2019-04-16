@@ -1,94 +1,130 @@
 AWS Test
 
+General:
 
-AWS Cloud infrastructure is built around Regions and Availability Zones (AZs). AWS Regions provide multiple, physically separated and isolated Availability Zones which are connected with low latency, high throughput, and highly redundant networking.
+Global Cloud Infrastructure is built around Regions and Availability Zones (AZs). AWS Regions provide multiple, physically separated and isolated Availability Zones which are connected with low latency, high throughput, and highly redundant networking.
+
+
+
+Cloud Management:
+
+CloudWatch - monitoring service for developers, system operators, ect... it provides you with a unified view of AWS resources, applications and services that run on AWS. You can use CloudWatch to set high resolution alarms, visualize logs and metrics side by side, take automated actions, troubleshoot issues, and discover insights to optimize your applications, and ensure they are running smoothly
+https://aws.amazon.com/cloudwatch/
+
+CloudTrail - service that enables governance, compliance, operational auditing, and risk auditing of your AWS account
+https://aws.amazon.com/cloudtrail/
+
+X-Ray - helps developers analyze and debug production, distributed applications, such as those built using a microservices architecture. X-Ray provides an end-to-end view of requests as they travel through your application, and shows a map of your application’s underlying components
+https://aws.amazon.com/xray/
+
+CloudFormation - provides a common language for you to describe and provision all the infrastructure resources in your cloud environment. provides an organized method to deploy all of your AWS resources. It allows you to manage your infrastucture as code.
+
+
+
+
+Application Layer:
 
 CloudFront Content Delivery Netork (CDN) -  You can use it to cache web content at edge locations that are closest to your end users. This will decrease latency and improve the overall performance.	Delivers content to end users with lower latency, Amazon CloudFront uses a global network of 166 Points of Presence (155 Edge Locations and 11 Regional Edge Caches) in 65 cities across 29 countries.
 https://aws.amazon.com/cloudfront/
 
-CloudWatch is a monitoring service for AWS cloud resources and the applications you run on AWS
-
-CloudTrail is a service that enables governance, compliance, operational auditing, and risk auditing of your AWS account
-
-**CloudFormation provides an organized method to deploy all of your AWS resources. It is a service that helps you model and set up your Amazon Web Services resources so that you can spend less time managing those resources and more time focusing on your applications that run in AWS. Can manage infrastucture as code.
-
-SimpleDB - is this even real
-
-DynamoDB - fast and flexible NoSQL database service
-
-Neptune - graph database built for the cloud
-
-Aurora - MySQL and PostgreSQL-compatible relational database engine
-
-Redshift - fully managed, PetaByte-scale data warehouse service in the cloud
-https://docs.aws.amazon.com/redshift/
-
-Elastic Block Store (EBS) provides persistent block storage volumes for use with Amazon EC2 instances in the AWS Cloud
-
 AWS Elastic Beanstalk - makes it easier for developers to quickly deploy and manage applications in the AWS Cloud. Developers simply upload their application code, and Elastic Beanstalk automatically handles the deployment details of capacity provisioning, load balancing, auto-scaling, and application health monitoring
-https://aws.amazon.com/elasticbeanstalk/faqs/
+https://aws.amazon.com/elasticbeanstalk/
 
-
-AWS X-Ray helps developers analyze and debug production, distributed applications, such as those built using a microservices architecture
-
-AWS VPC (Virtual Private Cloud) - enables you to launch AWS resources into a virtual network that you've defined
-
-AWS IAM (Identity and Access Management) - is a web service for securely controlling access to AWS services. With IAM, you can centrally manage users, security credentials such as access keys, and permissions that control which AWS resources users and applications can access
-https://aws.amazon.com/iam/
-
-AWS Cost Explorer - Displays distribution of AWS spending
-
-AWS WAF (web application firewall) - help protect your web applications from SQL injection and other vulnerabilities in your application code
-
-AWS Trusted Advisor is an online resource to help you reduce cost, increase performance, and improve security by optimizing your AWS environment, Trusted Advisor provides real time guidance to help you provision your resources following AWS best practices.
-
-AWS NACL is used to control traffic at the subnet level
-
-AWS Lambda lets you run code without provisioning or managing servers. You pay only for the compute time you consume - there is no charge when your code is not running
-
-Route 53 provides highly available and scalable Domain Name System (DNS), domain name registration, and health-checking web services.
-
-ElastiCache is a web service that makes it easy to set up, manage, and scale a distributed in-memory data store or cache environment in the cloud. It provides a high-performance, scalable, and cost-effective caching solution, while removing the complexity associated with deploying and managing a distributed cache environment
-
-S3 Transfer Acceleration - enables fast, easy, and secure transfers of files over long distances between your client and an S3 bucket. Transfer Acceleration takes advantage of Amazon CloudFront’s globally distributed edge locations. As the data arrives at an edge location, data is routed to Amazon S3 over an optimized network path
+Lambda - lets you run code without provisioning or managing servers. You pay only for the compute time you consume - there is no charge when your code is not running
+https://aws.amazon.com/lambda/
 
 Auto scaling is the feature that automates the process of adding/removing the server capacity (based on demand). 
 
-NACL = Network ACL (Access Control List)
+ElastiCache - web service that makes it easy to set up, manage, and scale a distributed in-memory data store or cache environment in the cloud. It provides a high-performance, scalable, and cost-effective caching solution, while removing the complexity associated with deploying and managing a distributed cache environment.
+https://aws.amazon.com/elasticache/
 
-S3 Intelligent-Tiering storage class is designed to optimize costs by automatically moving data to the most cost-effective access tier, without performance impact or operational overhead.
+Elastic Container Service (ECS) - highly scalable, high-performance container orchestration service that supports Docker containers and allows you to easily run and scale containerized applications on AWS. Amazon ECS eliminates the need for you to install and operate your own container orchestration software, manage and scale a cluster of virtual machines, or schedule containers on those virtual machines.
+https://aws.amazon.com/ecs/
+
+
+
+
+
+
+Databases:
+
+SimpleDB - NoSQL data store that offloads the work of database administration. Creates and manages multiple geographically distributed replicas of your data automatically to enable high availability and data durability. Developers simply store and query data items via web services requests and Amazon SimpleDB does the rest
+https://aws.amazon.com/simpledb/
+
+DynamoDB - NoSQL database service. A key-value and document database that delivers single-digit millisecond performance at any scale. It's a fully managed, multiregion, multimaster database with built-in security, backup and restore, and in-memory caching for internet-scale applications
+https://aws.amazon.com/dynamodb/
+
+Neptune - NoSQL graph database service for highly connected datasets. Neptune supports popular graph models Property Graph and W3C's RDF, and their respective query languages Apache TinkerPop Gremlin and SPARQL.
+https://aws.amazon.com/neptune/
+
+Aurora - MySQL and PostgreSQL-compatible RDS. Up to 5x faster than standard MySQL databases and 3x faster than standard PostgreSQL databases
+https://aws.amazon.com/rds/aurora/
+
+Redshift - PetaByte-scale data warehouse service. Redshift delivers ten times faster performance than other data warehouses by using machine learning, massively parallel query execution, and columnar storage on high-performance disk.
+https://docs.aws.amazon.com/redshift/
+
+Elastic Map Reduce (EMR) - helps you analyze and process vast amounts of data by distributing the computational work across a cluster of virtual servers running in the AWS Cloud. The cluster is managed using an open-source framework called Hadoop. Amazon EMR lets you focus on crunching or analyzing your data without having to worry about time-consuming setup, management, and tuning of Hadoop clusters or the compute capacity they rely on
+https://aws.amazon.com/emr/
+
+
+
+Storage:
+
+Elastic Block Store (EBS) - provides persistent block storage volumes for use with Amazon EC2 instances in the AWS Cloud. Each Amazon EBS volume is automatically replicated within its Availability Zone to protect you from component failure, offering high availability and durability
+https://aws.amazon.com/ebs/
+
+Simple Storage Service (S3) - largest and most performant, secure, and feature-rich object storage service.
+	S3 Intelligent-Tiering storage class is designed to optimize costs by automatically moving data to the most cost-effective access tier, without performance impact or operational overhead.
+
+
+
+
+ETL (Extract/Transform/Load):
+
+S3 Transfer Acceleration - enables fast, easy, and secure transfers of files over long distances between your client and an S3 bucket. Transfer Acceleration takes advantage of Amazon CloudFront’s globally distributed edge locations. As the data arrives at an edge location, data is routed to Amazon S3 over an optimized network path
+https://docs.aws.amazon.com/AmazonS3/latest/dev/transfer-acceleration.html
+
+
+
+Network:
+
+Virtual Private Cloud (VPC) - lets you provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define
+https://aws.amazon.com/vpc/
+	Network Access Control List (NACL) - an optional layer of security for your VPC that acts as a firewall for controlling traffic in and out of one or more subnets
+	https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html
+
+
+Web Application Firewall (WAF) - helps protect your web applications from common web exploits that could affect application availability, compromise security, or consume excessive resources. It gives you control over which traffic to allow or block to your web applications by defining customizable web security rules.
+https://aws.amazon.com/waf/
+
+Route 53  - provides highly available and scalable Domain Name System (DNS), domain name registration, and health-checking web services.
+
+
+
+Notification:
 
 Simple Queue Service (Amazon SQS) offers a reliable, highly-scalable hosted queue for storing messages as they travel between applications or microservices. It moves data between distributed application components and helps you decouple these components
 https://aws.amazon.com/sqs/
 
-IaaS - Infrastructure as a Service
-HaaS - Hardware as a Service
-PaaS - Platform as a Service
-SaaS - Software as a Service
-
-The 5 Pillars of the AWS Well-Architected Framework:
-	Operational Excellence
-	Security
-	Reliability
-	Performance Efficiency
-	Cost Optimization
-
-Operational Excellence: The operational excellence pillar includes the ability to run and monitor systems to deliver business value and to continually improve supporting processes and procedures.
-
-Security: The security pillar includes the ability to protect information, systems, and assets while delivering business value through risk assessments and mitigation strategies.
-	
-Reliability: The reliability pillar includes the ability of a system to recover from infrastructure or service disruptions, dynamically acquire computing resources to meet demand, and mitigate disruptions such as  misconfigurations or transient network issues.
-
-Performance Efficiency: The performance efficiency pillar includes the ability to use computing resources efficiently to meet system requirements and to maintain that efficiency as demand changes and technologies evolve.
-	
-Cost Optimization: The cost optimization pillar includes the ability to avoid or eliminate unneeded cost or suboptimal resources.
 
 
-Amazon ECS (Amazon Elastic Container Service) - highly scalable, high-performance container orchestration service that supports Docker containers and allows you to easily run and scale containerized applications on AWS. Amazon ECS eliminates the need for you to install and operate your own container orchestration software, manage and scale a cluster of virtual machines, or schedule containers on those virtual machines.
 
-Amazon EMR (Elastic Map Reduce) helps you analyze and process vast amounts of data by distributing the computational work across a cluster of virtual servers running in the AWS Cloud. The cluster is managed using an open-source framework called Hadoop. Amazon EMR lets you focus on crunching or analyzing your data without having to worry about time-consuming setup, management, and tuning of Hadoop clusters or the compute capacity they rely on
+Security:
 
-TCO Calculator provides directional guidance on possible realized savings when deploying AWS. This tool is built on an underlying calculation model, that generates a fair assessment of value that a customer may achieve given the data provided by the user which includes the number of servers migrated to AWS,  the server type, the number of Processors and so on
+Identity and Access Management (IAM) - is an Access Control List (ACL), it enables you to manage access to AWS services and resources securely. It is a web service for securely controlling access to AWS services. With IAM, you can centrally manage users, security credentials such as access keys, and permissions that control which AWS resources users and applications can access
+https://aws.amazon.com/iam/
+
+
+
+Cost:
+
+Cost Management - Tools to help you to access, organize, understand, control, and optimize your AWS costs and usage
+https://aws.amazon.com/aws-cost-management/
+	AWS Cost Explorer - Displays distribution of AWS spending, lets you visualize, understand, and manage your AWS costs and usage over time
+	https://aws.amazon.com/aws-cost-management/aws-cost-explorer/ 
+
+TCO Calculator - provides directional guidance on possible realized savings when deploying AWS. This tool is built on an underlying calculation model, that generates a fair assessment of value that a customer may achieve given the data provided by the user which includes the number of servers migrated to AWS,  the server type, the number of Processors and so on
+https://aws.amazon.com/tco-calculator/
 
 Pricing - 
 1- No Upfront:
@@ -111,3 +147,41 @@ EC2 instance pricing various depending on many variables:
 - Region
 - Data Transfer in/out
 - Storage capacity. 
+
+
+
+Support:
+
+Trusted Advisor -  online tool that provides you real time guidance to help you provision your resources following AWS best practices. It scans your AWS Infrastructure, compares it to AWS best practices in five categories and provides recomended actions.
+ - Cost Opitimization
+ - Performance
+ - Security
+ - Fault Tolerance
+ - Service Limits
+
+
+
+
+
+
+IaaS - Infrastructure as a Service
+HaaS - Hardware as a Service
+PaaS - Platform as a Service
+SaaS - Software as a Service
+
+The 5 Pillars of the AWS Well-Architected Framework:
+	Operational Excellence
+	Security
+	Reliability
+	Performance Efficiency
+	Cost Optimization
+
+Operational Excellence: The operational excellence pillar includes the ability to run and monitor systems to deliver business value and to continually improve supporting processes and procedures.
+
+Security: The security pillar includes the ability to protect information, systems, and assets while delivering business value through risk assessments and mitigation strategies.
+	
+Reliability: The reliability pillar includes the ability of a system to recover from infrastructure or service disruptions, dynamically acquire computing resources to meet demand, and mitigate disruptions such as  misconfigurations or transient network issues.
+
+Performance Efficiency: The performance efficiency pillar includes the ability to use computing resources efficiently to meet system requirements and to maintain that efficiency as demand changes and technologies evolve.
+	
+Cost Optimization: The cost optimization pillar includes the ability to avoid or eliminate unneeded cost or suboptimal resources.
