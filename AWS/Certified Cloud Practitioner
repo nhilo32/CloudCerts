@@ -1,0 +1,113 @@
+AWS Test
+
+
+AWS Cloud infrastructure is built around Regions and Availability Zones (AZs). AWS Regions provide multiple, physically separated and isolated Availability Zones which are connected with low latency, high throughput, and highly redundant networking.
+
+CloudFront Content Delivery Netork (CDN) -  You can use it to cache web content at edge locations that are closest to your end users. This will decrease latency and improve the overall performance.	Delivers content to end users with lower latency, Amazon CloudFront uses a global network of 166 Points of Presence (155 Edge Locations and 11 Regional Edge Caches) in 65 cities across 29 countries.
+https://aws.amazon.com/cloudfront/
+
+CloudWatch is a monitoring service for AWS cloud resources and the applications you run on AWS
+
+CloudTrail is a service that enables governance, compliance, operational auditing, and risk auditing of your AWS account
+
+**CloudFormation provides an organized method to deploy all of your AWS resources. It is a service that helps you model and set up your Amazon Web Services resources so that you can spend less time managing those resources and more time focusing on your applications that run in AWS. Can manage infrastucture as code.
+
+SimpleDB - is this even real
+
+DynamoDB - fast and flexible NoSQL database service
+
+Neptune - graph database built for the cloud
+
+Aurora - MySQL and PostgreSQL-compatible relational database engine
+
+Redshift - fully managed, PetaByte-scale data warehouse service in the cloud
+https://docs.aws.amazon.com/redshift/
+
+Elastic Block Store (EBS) provides persistent block storage volumes for use with Amazon EC2 instances in the AWS Cloud
+
+AWS Elastic Beanstalk - makes it easier for developers to quickly deploy and manage applications in the AWS Cloud. Developers simply upload their application code, and Elastic Beanstalk automatically handles the deployment details of capacity provisioning, load balancing, auto-scaling, and application health monitoring
+https://aws.amazon.com/elasticbeanstalk/faqs/
+
+
+AWS X-Ray helps developers analyze and debug production, distributed applications, such as those built using a microservices architecture
+
+AWS VPC (Virtual Private Cloud) - enables you to launch AWS resources into a virtual network that you've defined
+
+AWS IAM (Identity and Access Management) - is a web service for securely controlling access to AWS services. With IAM, you can centrally manage users, security credentials such as access keys, and permissions that control which AWS resources users and applications can access
+https://aws.amazon.com/iam/
+
+AWS Cost Explorer - Displays distribution of AWS spending
+
+AWS WAF (web application firewall) - help protect your web applications from SQL injection and other vulnerabilities in your application code
+
+AWS Trusted Advisor is an online resource to help you reduce cost, increase performance, and improve security by optimizing your AWS environment, Trusted Advisor provides real time guidance to help you provision your resources following AWS best practices.
+
+AWS NACL is used to control traffic at the subnet level
+
+AWS Lambda lets you run code without provisioning or managing servers. You pay only for the compute time you consume - there is no charge when your code is not running
+
+Route 53 provides highly available and scalable Domain Name System (DNS), domain name registration, and health-checking web services.
+
+ElastiCache is a web service that makes it easy to set up, manage, and scale a distributed in-memory data store or cache environment in the cloud. It provides a high-performance, scalable, and cost-effective caching solution, while removing the complexity associated with deploying and managing a distributed cache environment
+
+S3 Transfer Acceleration - enables fast, easy, and secure transfers of files over long distances between your client and an S3 bucket. Transfer Acceleration takes advantage of Amazon CloudFront’s globally distributed edge locations. As the data arrives at an edge location, data is routed to Amazon S3 over an optimized network path
+
+Auto scaling is the feature that automates the process of adding/removing the server capacity (based on demand). 
+
+NACL = Network ACL (Access Control List)
+
+S3 Intelligent-Tiering storage class is designed to optimize costs by automatically moving data to the most cost-effective access tier, without performance impact or operational overhead.
+
+Simple Queue Service (Amazon SQS) offers a reliable, highly-scalable hosted queue for storing messages as they travel between applications or microservices. It moves data between distributed application components and helps you decouple these components
+https://aws.amazon.com/sqs/
+
+IaaS - Infrastructure as a Service
+HaaS - Hardware as a Service
+PaaS - Platform as a Service
+SaaS - Software as a Service
+
+The 5 Pillars of the AWS Well-Architected Framework:
+	Operational Excellence
+	Security
+	Reliability
+	Performance Efficiency
+	Cost Optimization
+
+Operational Excellence: The operational excellence pillar includes the ability to run and monitor systems to deliver business value and to continually improve supporting processes and procedures.
+
+Security: The security pillar includes the ability to protect information, systems, and assets while delivering business value through risk assessments and mitigation strategies.
+	
+Reliability: The reliability pillar includes the ability of a system to recover from infrastructure or service disruptions, dynamically acquire computing resources to meet demand, and mitigate disruptions such as  misconfigurations or transient network issues.
+
+Performance Efficiency: The performance efficiency pillar includes the ability to use computing resources efficiently to meet system requirements and to maintain that efficiency as demand changes and technologies evolve.
+	
+Cost Optimization: The cost optimization pillar includes the ability to avoid or eliminate unneeded cost or suboptimal resources.
+
+
+Amazon ECS (Amazon Elastic Container Service) - highly scalable, high-performance container orchestration service that supports Docker containers and allows you to easily run and scale containerized applications on AWS. Amazon ECS eliminates the need for you to install and operate your own container orchestration software, manage and scale a cluster of virtual machines, or schedule containers on those virtual machines.
+
+Amazon EMR (Elastic Map Reduce) helps you analyze and process vast amounts of data by distributing the computational work across a cluster of virtual servers running in the AWS Cloud. The cluster is managed using an open-source framework called Hadoop. Amazon EMR lets you focus on crunching or analyzing your data without having to worry about time-consuming setup, management, and tuning of Hadoop clusters or the compute capacity they rely on
+
+TCO Calculator provides directional guidance on possible realized savings when deploying AWS. This tool is built on an underlying calculation model, that generates a fair assessment of value that a customer may achieve given the data provided by the user which includes the number of servers migrated to AWS,  the server type, the number of Processors and so on
+
+Pricing - 
+1- No Upfront:
+
+          No upfront payment is required. You are billed a discounted hourly rate  for every hour within the term, regardless of whether the Reserved Instance is being used. No Upfront Reserved Instances are based on a contractual obligation to pay monthly for the entire term of the reservation. A successful billing history is required before you can purchase No Upfront Reserved Instances.
+
+2- Partial Upfront:
+
+           A portion of the cost must be paid up front and the remaining hours in the term are billed at a discounted hourly rate, regardless of whether you’re using the Reserved Instance.
+
+3- All Upfront:
+
+           With the All Upfront option, you pay for the entire Reserved Instance term with one upfront payment. This option provides you with the largest discount compared to On-Demand instance pricing.
+https://aws.amazon.com/ec2/pricing/reserved-instances/pricing/
+
+EC2 instance pricing various depending on many variables:
+- The type of buying option (On-demand, Reserved, Spot, Dedicated)
+- Selected Ami
+- Selected instance type
+- Region
+- Data Transfer in/out
+- Storage capacity. 
