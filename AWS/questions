@@ -1,0 +1,97 @@
+
+
+Amazon Simple Workflow Service (SWF)
+Amazon Simple Workflow Service (SWF) is a web service that makes it easy to coordinate work across distributed application components. Amazon SWF enables applications for a range of use cases, including media processing, web application back-ends, business process workflows, and analytics pipelines, to be designed as a coordination of tasks. Tasks represent invocations of various processing steps in an application which can be performed by executable code, web service calls, human actions, and scripts. The coordination of tasks involves managing execution dependencies, scheduling, and concurrency in accordance with the logical flow of the application. With Amazon SWF, developers get full control over implementing processing steps and coordinating the tasks that drive them, without worrying about underlying complexities such as tracking their progress and keeping their state.
+https://aws.amazon.com/swf/
+
+Which of the following support plans includes the AWS Support Concierge Service?
+
+
+Which of the following should you consider when creating a tagging strategy for your AWS resources? (Select all that apply)
+Option C is not correct. If all the resources have different keys and values, then you will not benefit from using them. For example if you have a development and a production environments and you want to distinguish between the resources used in each of them you have to add a tag [KEY = let say “Purpose” and VALUE = either “Development” or “Production”] for all resources. When you want to select all production resources, select the key first which is "Purpose" then select the value "Production".
+https://aws.amazon.com/answers/account-management/aws-tagging-strategies/
+
+Which AWS support plan would help provide general guidance when you request Architecture Support?
+https://aws.amazon.com/premiumsupport/compare-plans/
+
+Which of the following is used to control traffic in AWS? (Select all that apply)
+** Security groups — Act as a firewall for associated Amazon EC2 instances, controlling both inbound and outbound traffic at the instance level.
+** Network access control lists (ACLs) — Act as a firewall for associated subnets, controlling both inbound and outbound traffic at the subnet level.
+**Route Tables — A route table contains a set of rules, called routes, that are used to determine where network traffic is directed.
+References:
+https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Security.html
+https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html
+
+A company has a distributed application that periodically processes large volumes of data across multiple Amazon EC2 Instances. The application is designed to recover gracefully from Amazon EC2 instance failures. There is a requirement to accomplish this task in the most cost-effective way. Which of the following would be most appropriate?
+The question stated that “The application is designed to recover gracefully from Amazon EC2 instance failures”, therefore it can handle any interruption may occur with the instance and hence we can use the Spot instances. Spot instances provides a discount (up to 90%) off the On-Demand price, however Reserved Instances provide a discount (up to 75%) compared to On-Demand instance.
+Note: Even if the question stated that the company needs the instances for a year, the answer will be Spot also as it is more cost effective than the Reserved option.
+Spot Instances are the most cost-effective choice if you can be flexible about when your applications run and if your applications can be interrupted.               
+Dedicated instances are used when you want your instances to be physically isolated at the host hardware level from instances that belong to other AWS accounts.
+References:
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html
+
+What are the design principles for performance efficiency in the cloud? (Select all that apply)
+There are five design principles for performance efficiency in the cloud:
+**  Democratize advanced technologies: Technologies that are difficult to implement can become easier to consume by pushing that knowledge and complexity into the cloud vendor’s domain. Rather than having your IT team learn how to host and run a new technology, they can simply consume it as a service. For example, NoSQL databases, media transcoding, and machine learning are all technologies that require expertise that is not evenly dispersed across the technical community. In the cloud, these technologies become services that your team can consume while focusing on product development rather than resource provisioning and management.
+**  Go global in minutes: Easily deploy your system in multiple Regions around theworld with just a few clicks. This allows you to provide lower latency and a better experience for your customers at minimal cost.
+**  Use serverless architectures: In the cloud, serverless architectures remove the need for you to run and maintain servers to carry out traditional compute activities. For example, storage services can act as static websites, removing the need for webservers, and event services can host your code for you. This not only removes the operational burden of managing these servers, but also can lower transactional costs because these managed services operate at cloud scale.
+**  Experiment more often: With virtual and automatable resources, you can quickly carry out comparative testing using different types of instances, storage, orconfigurations.
+**  Mechanical sympathy: Use the technology approach that aligns best to what you are trying to achieve. For example, consider data access patterns when selecting database or storage approaches .
+References:
+https://d1.awsstatic.com/whitepapers/architecture/AWS_Well-Architected_Framework.pdf
+
+Which AWS service must you use if you want to configure an AWS billing alarm?
+CloudWatch is the AWS service that allows you to monitor the usage of your AWS resources
+
+You decided to use Amazon S3 to store infrequently accessed data. What storage class would you use?
+Standard – Infrequent Access (SIA) is a storage option within Amazon S3 you can use to reduce your costs by storing less-frequently accessed data at slightly lower levels of redundancy than the standard Amazon S3 storage.
+
+Which of the following best describes the AWS shared controls?
+Shared Controls are controls which apply to both the infrastructure layer and customer layers
+
+How can ELBs provide fault tolerance to your application?
+ELB continuously do health checks to the registered targets (such as Amazon EC2 instances) and routes traffic only to the healthy ones
+
+Which aws support plan would help provide 24x7 technical support? (Select all that apply )
+Each of the Business and Enterprise support plans provide 24x7 access to technical support engineers via phone, email, and chat.
+https://aws.amazon.com/premiumsupport/plans/
+
+You want to host a set of servers in AWS using Amazon EC2 instances for a short period (3 months), what is the most cost-effective option?
+The most cost-effective option for this short period is to use the On-Demand option.
+Option A is not correct. The question doesn’t mention whether there can be interruptions or not, therefore we cannot choose Spot.
+
+How does AWS Lambda Work?
+AWS Lambda lets you run code without provisioning or managing servers.
+
+What are the main benefits of the AWS Service Catalog? (Choose two)
+AWS Service Catalog allows organizations to create and manage catalogs of IT services that are approved for use on AWS. These IT services can include everything from virtual machine images, servers, software, and databases to complete multi-tier application architectures. AWS Service Catalog allows you to centrally manage commonly deployed IT services, and helps you achieve consistent governance and meet your compliance requirements, while enabling users to quickly deploy only the approved IT services they need.
+
+What are the AWS recommendations about your root access keys?
+AWS recommends that you delete your root access keys because you can’t restrict permissions for the root user credentials
+
+Which of the following services can be used for processing images uploaded to S3?
+AWS Lambda is the only service here that can be used for "processing" as it is a computing service
+
+Which of the following services would help in reducing the complexity and time in planning your application migration to the AWS Cloud?
+AWS Application Discovery Service helps systems integrators quickly and reliably plan application migration projects by automatically identifying applications running in on-premises data centers, their associated dependencies, and their performance profiles. Planning data center migrations can involve thousands of workloads that are often deeply interdependent. Application discovery and dependency mapping are important early first steps in the migration process, but these tasks are difficult to perform at scale due to the lack of automated tools.AWS Application Discovery Service automatically collects configuration and usage data from servers, storage, and networking equipment to develop a list of applications, how they perform, and how they are interdependent. This information is retained in encrypted format in an AWS Application Discovery Service database, which you can export as a CSV or XML file into your preferred visualization tool or cloud migration solution to help reduce the complexity and time in planning your cloud migration.
+
+While working with Amazon S3, you found that six of your S3 buckets were deleted, but no one is taking responsibility. You decide to open an investigation in order to find out who deleted the S3 buckets. Which of the following may help you in your investigation?
+AWS CloudTrail can help you track AWS API calls made to S3 and identify who deleted the S3 buckets. 
+Option B is not correct. Amazon CloudWatch Logs are not used to record user interactions with AWS
+
+Which of the following are two options to pay for the AWS Developer Support Plan? (Choose two)
+The price of the AWS Developer Support Plan is a greater of $29 or 3% of monthly AWS usage.
+https://aws.amazon.com/premiumsupport/pricing/
+
+What is a placement group in Amazon EC2?
+A placement group is a logical grouping of instances within a single Availability Zone.
+
+You need to set up a security certificate for a client's eCommerce website as it will use the HTTPS protocol. Which of the below AWS services do you need to access in order to manage your SSL server certificate?(Select all that apply)
+To enable HTTPS connections to your website or application in AWS, you need an SSL/TLS server certificate. You can use a server certificate provided by AWS Certificate Manager (ACM) or one that you obtained from an external provider. You can use ACM or IAM to store and deploy server certificates. Use IAM as a certificate manager only when you must support HTTPS connections in a region that is not supported by ACM. IAM supports deploying server certificates in all regions, but you must obtain your certificate from an external provider for use with AWS. Amazon Route 53 is used to register domain names or use your own domain name to route your end users to Internet applications. Route 53 is not responsible for creating SSL certifications.
+
+Doodle, Inc. has a web application that ultimately stores billions of images and videos, which runs in Exabyte. Which of the following AWS services can help them transfer the data to AWS?
+AWS Snowmobile is an Exabyte-scale data transfer service used to move extremely large amounts of data to AWS. You can transfer up to 100PB per Snowmobile, a 45-foot long ruggedized shipping container, pulled by a semi-trailer truck. Snowmobile makes it easy to move massive volumes of data to the cloud, including video libraries, image repositories, or even a complete data center migration. Transferring data with Snowmobile is more secure, fast and cost effective. 
+
+
+
+Jonpue - 215-360-0391
