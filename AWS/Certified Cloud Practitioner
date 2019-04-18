@@ -24,7 +24,7 @@ CloudFormation - provides a common language for you to describe and provision al
 
 Application Layer:
 
-CloudFront Content Delivery Netork (CDN) -  You can use it to cache web content at edge locations that are closest to your end users. This will decrease latency and improve the overall performance.	Delivers content to end users with lower latency, Amazon CloudFront uses a global network of 166 Points of Presence (155 Edge Locations and 11 Regional Edge Caches) in 65 cities across 29 countries.
+CloudFront Content Delivery Netork (CDN) -  You can use it to cache web content at edge locations that are closest to your end users. This will decrease latency and improve the overall performance. Delivers content to end users with lower latency, Amazon CloudFront uses a global network of 166 Points of Presence (155 Edge Locations and 11 Regional Edge Caches) in 65 cities across 29 countries.
 https://aws.amazon.com/cloudfront/
 
 AWS Elastic Beanstalk - makes it easier for developers to quickly deploy and manage applications in the AWS Cloud. Developers simply upload their application code, and Elastic Beanstalk automatically handles the deployment details of capacity provisioning, load balancing, auto-scaling, and application health monitoring
@@ -74,7 +74,7 @@ Elastic Block Store (EBS) - provides persistent block storage volumes for use wi
 https://aws.amazon.com/ebs/
 
 Simple Storage Service (S3) - largest and most performant, secure, and feature-rich object storage service.
-	S3 Intelligent-Tiering storage class is designed to optimize costs by automatically moving data to the most cost-effective access tier, without performance impact or operational overhead.
+  S3 Intelligent-Tiering storage class is designed to optimize costs by automatically moving data to the most cost-effective access tier, without performance impact or operational overhead.
 
 
 
@@ -90,8 +90,8 @@ Network:
 
 Virtual Private Cloud (VPC) - lets you provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define
 https://aws.amazon.com/vpc/
-	Network Access Control List (NACL) - an optional layer of security for your VPC that acts as a firewall for controlling traffic in and out of one or more subnets
-	https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html
+  Network Access Control List (NACL) - an optional layer of security for your VPC that acts as a firewall for controlling traffic in and out of one or more subnets
+  https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html
 
 
 Web Application Firewall (WAF) - helps protect your web applications from common web exploits that could affect application availability, compromise security, or consume excessive resources. It gives you control over which traffic to allow or block to your web applications by defining customizable web security rules.
@@ -120,11 +120,15 @@ Cost:
 
 Cost Management - Tools to help you to access, organize, understand, control, and optimize your AWS costs and usage
 https://aws.amazon.com/aws-cost-management/
-	AWS Cost Explorer - Displays distribution of AWS spending, lets you visualize, understand, and manage your AWS costs and usage over time
-	https://aws.amazon.com/aws-cost-management/aws-cost-explorer/ 
+  AWS Cost Explorer - Displays distribution of AWS spending, lets you visualize, understand, and manage your AWS costs and usage over time
+  https://aws.amazon.com/aws-cost-management/aws-cost-explorer/ 
 
 TCO Calculator - provides directional guidance on possible realized savings when deploying AWS. This tool is built on an underlying calculation model, that generates a fair assessment of value that a customer may achieve given the data provided by the user which includes the number of servers migrated to AWS,  the server type, the number of Processors and so on
 https://aws.amazon.com/tco-calculator/
+
+The AWS Cost & Usage Report is a single location for accessing comprehensive information about your AWS costs and usage. The AWS Cost & Usage Report lists AWS usage for each service category used by an account and its IAM users in hourly or daily line items, as well as any tags that you have activated for cost allocation purposes. The AWS Cost & Usage Report can also be customized to aggregate your usage data to the daily or monthly level.
+https://docs.aws.amazon.com/aws-technical-content/latest/cost-optimization-reservation-models/aws-cost-and-usage-report.html 
+
 
 Pricing - 
 1- No Upfront:
@@ -170,18 +174,20 @@ PaaS - Platform as a Service
 SaaS - Software as a Service
 
 The 5 Pillars of the AWS Well-Architected Framework:
-	Operational Excellence
-	Security
-	Reliability
-	Performance Efficiency
-	Cost Optimization
+  Operational Excellence
+  Security
+  Reliability
+  Performance Efficiency
+  Cost Optimization
 
 Operational Excellence: The operational excellence pillar includes the ability to run and monitor systems to deliver business value and to continually improve supporting processes and procedures.
 
 Security: The security pillar includes the ability to protect information, systems, and assets while delivering business value through risk assessments and mitigation strategies.
-	
+  
 Reliability: The reliability pillar includes the ability of a system to recover from infrastructure or service disruptions, dynamically acquire computing resources to meet demand, and mitigate disruptions such as  misconfigurations or transient network issues.
 
 Performance Efficiency: The performance efficiency pillar includes the ability to use computing resources efficiently to meet system requirements and to maintain that efficiency as demand changes and technologies evolve.
-	
+  
 Cost Optimization: The cost optimization pillar includes the ability to avoid or eliminate unneeded cost or suboptimal resources.
+
+
